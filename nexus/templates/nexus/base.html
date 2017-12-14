@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}{% if title %}{{ title }} | {% endif %}Nexus{% endblock %}</title>
+        <title>{% block title %}{% if title %}{{ title }} | {% endif %}Mymo Admin{% endblock %}</title>
 
         <link rel="stylesheet" href="{% nexus_media_prefix %}/nexus/css/nexus.css">
         <link rel="stylesheet" href="{% nexus_media_prefix %}/nexus/css/facebox.css">
@@ -62,7 +62,7 @@
                     {% endif %}
                     {% block breadcrumbs %}
                         <ul id="breadcrumbs">
-                            <li><a href="{% url 'nexus:index' %}">Nexus</a></li>
+                            <li><a href="{% url 'nexus:index' %}">Home</a></li>
                             {% block breadcrumb_bits %}
                                 {% for title, link in trail_bits %}
                                     <li><a href="{{ link }}">{{ title }}</a></li>
